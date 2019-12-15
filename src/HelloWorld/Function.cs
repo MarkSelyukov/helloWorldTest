@@ -34,7 +34,7 @@ namespace HelloWorld
             var location = await GetCallingIp();
             var body = new Dictionary<string, string>
             {
-                { "Message: ", "It is deployed with an update to master" }
+                { "Message: ", "It is deployed with an update to master. If this does not work I will cry" }
             };
 
             return new APIGatewayProxyResponse
