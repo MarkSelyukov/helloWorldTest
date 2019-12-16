@@ -2,8 +2,8 @@ version: 0.2
 
 phases:
   install:
-         runtime-versions:
-         docker: 18 
+    - runtime-versions:
+    - docker: 18 
   pre_build:
     commands:
      - New-Item -ItemType Junction -Path C:\Src -Value $Env:CODEBUILD_SRC_DIR
