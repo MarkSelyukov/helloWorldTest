@@ -7,6 +7,9 @@ env:
     DOTNET_FRAMEWORK: 4.6.2
 
 phases:
+  install:
+    runtime-versions:
+        dotnet: 2.1
   build:
     commands:
       - '& "C:\ProgramData\chocolatey\bin\NuGet.exe" restore $env:SOLUTION -PackagesDirectory $env:PACKAGE_DIRECTORY'
