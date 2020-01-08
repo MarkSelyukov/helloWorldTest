@@ -16,4 +16,4 @@ phases:
       - nuget restore
   build:
     commands:
-      - msbuild /P:Configuration=Release /T:Build,Package
+      - sam build
